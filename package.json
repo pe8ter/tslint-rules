@@ -1,0 +1,28 @@
+{
+  "name": "tslint-rules",
+  "version": "1.0.0",
+  "description": "Custom rules for TSLint.",
+  "author": "Peter Safranek <pe8ter@mac.com> (http://pe8ter.com)",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/pe8ter/tslint-rules#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pe8ter/tslint-rules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pe8ter/tslint-rules/issues"
+  },
+  "scripts": {
+    "build": "rm -rf dist; tsc"
+  },
+  "keywords": [
+    "tslint",
+    "lint",
+    "typescript"
+  ],
+  "dependencies": {
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.5"
+  }
+}
