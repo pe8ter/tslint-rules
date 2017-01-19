@@ -1,10 +1,13 @@
 
 /*
-    This file is auto-generated. DO NOT EDIT.
+    This file was compiled in another project. DO NOT EDIT.
     Copyright (c) 2016 Peter Safranek
     Protected under the MIT license (see LICENSE.md).
     Parts copied from the TSLint project: https://github.com/palantir/tslint/blob/7c841c0/src/rules/banRule.ts,
     which is protected under the Apache License, Version 2: http://www.apache.org/licenses/LICENSE-2.0
+
+    This rule makes sure that Jasmine's `expect()` function isn't called within a `catch` clause, which can cause
+    tests to incorrectly succeed.
  */
 
 import * as ts from 'typescript';
