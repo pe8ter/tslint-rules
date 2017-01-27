@@ -1,7 +1,7 @@
 
 /*
     This file was compiled in another project. DO NOT EDIT.
-    Copyright (c) 2016 Peter Safranek
+    Copyright (c) 2017 Peter Safranek
     Protected under the MIT license (see LICENSE.md).
     Parts copied from the TSLint project: https://github.com/palantir/tslint/blob/7c841c0/src/rules/banRule.ts,
     which is protected under the Apache License, Version 2: http://www.apache.org/licenses/LICENSE-2.0
