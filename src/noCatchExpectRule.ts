@@ -11,20 +11,20 @@
  */
 
 import * as ts from 'typescript';
-import { Rules, RuleFailure, RuleWalker } from 'tslint';
+import * as TSlint from 'tslint';
 
 const EXPECT = 'expect';
 
-export class Rule extends Rules.AbstractRule {
+export class Rule extends TSlint.Rules.AbstractRule {
 
     public static FAILURE_MESSAGE: string = 'Cannot call expect() within a catch block.';
 
-    public apply(sourceFile: ts.SourceFile): Array<RuleFailure> {
+    public apply(sourceFile: ts.SourceFile): Array<TSlint.RuleFailure> {
         return this.applyWithWalker(new NoCatchExpectWalker(sourceFile, this.getOptions()));
     }
 }
 
-class NoCatchExpectWalker extends RuleWalker {
+class NoCatchExpectWalker extends TSlint.RuleWalker {
 
     public visitCallExpression(node: ts.CallExpression): void {
         if (this._checkForExpectCall(node.expression)) {
