@@ -1,3 +1,6 @@
+# DEPRECATED
+
+This project is no longer supported. Use [pslint](https://github.com/pe8ter/pslint) instead.
 
 # tslint-rules
 
